@@ -51,6 +51,8 @@ This project implements a robust **Lambda Architecture** with two distinct proce
 
  4. **Generate Data**
    ```bash
+   python Transaction.py
+
 
  5 **Access Airflow & Generate Report**
 
