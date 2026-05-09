@@ -37,5 +37,27 @@ This project implements a robust **Lambda Architecture** with two distinct proce
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/fintech-fraud-detection-pipeline.git](https://github.com/yourusername/fintech-fraud-detection-pipeline.git)
-   cd fintech-fraud-detection-pipeline
+   git clone https://github.com/Pasindu2000B/FinTech_Fraud_Detection_Sys.git
+   cd FinTech-Fraud-Detection-Pipeline
+
+2. **Docker Compose**
+   ```bash
+   docker-compose up -d
+
+3. **Start Streaming Job**
+   ```bash
+   docker exec -it spark-master /opt/spark/bin/spark-submit --conf spark.jars.ivy=/tmp/.ivy2 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,org.postgresql:postgresql:42.7.2 /opt/spark-apps/fraud_streaming.py
+
+
+ 4. **Generate Data**
+   ```bash
+
+ 5 **Access Airflow & Generate Report**
+
+    *Navigate to http://localhost:8082 (Login: airflow / airflow).
+    *Unpause and trigger the Reconciliation_batch DAG.
+    *Once the task is green, your PDF report will be waiting in the /scripts folder.  python Transaction.py
+
+
+
+
