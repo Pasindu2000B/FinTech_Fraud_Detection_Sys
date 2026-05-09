@@ -21,8 +21,9 @@ This project implements a robust **Lambda Architecture** with two distinct proce
 ## Key Features & Fraud Rules
 
 * **Real-time Ingestion:** Continuous consumption of JSON transaction data from Kafka topics
-* **Complex Event Processing:** * **High Value Fraud:** Flags transactions exceeding $5,000.
-  * **Impossible Travel:** Detects transactions from the same user in different countries within a 10-minute window using Spark Watermarking and Windowing.
+* **Complex Event Processing:**
+* **High Value Fraud:** Flags transactions exceeding $5,000.
+* **Impossible Travel:** Detects transactions from the same user in different countries within a 10-minute window using Spark Watermarking and Windowing.
 * **Data Warehousing:** Separates validated transactions and stores them in Parquet format fornalytics.
 * **Automated Reconciliation:** Airflow DAG scheduled every 6 hours generates a comprehensive PDF report that shows total ingress volume vs. validated volume, along with a breakdown of fraud attempts by merchant category.
 
@@ -32,7 +33,7 @@ This project implements a robust **Lambda Architecture** with two distinct proce
 * Docker Desktop
 * Docker Compose
 * Python 3.8+ (for local scripts)
-* 
+
 ### Installation & Setup
 
 1. **Clone the repository:**
